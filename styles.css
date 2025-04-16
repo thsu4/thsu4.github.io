@@ -1,3 +1,28 @@
 body {
-    background-color: lightblue;
+    background-color: rgb(226, 227, 227);
+    font-family: "Helvetica Neue"; font-size: 20px; font-style: normal; font-weight: 400; line-height: 30px;
+    text-align: center;
+}
+h1
+ {
+     font-family: "Helvetica Neue"; font-size: 40px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 44px; 
+     text-align: center;
+    } 
+a:link {
+    text-decoration: none; 
+    color: rgb(0, 0, 0);
+  }
+  
+  /* visited link */
+  a:visited {
+    color: rgb(105, 108, 255);
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: rgb(105, 108, 255);
+  }
+  
+ul{
+    list-style-type: none;
 }
