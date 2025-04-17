@@ -1,9 +1,11 @@
+
 @font-face {
     font-family: "meteoric";
-    src: url("Meteoric.woff") format("woff");
+    src: url("meteoric.woff") format("woff");
     font-weight: normal;
     font-style: normal;
   }
+  
   
 body{
     font-family:"meteoric";
