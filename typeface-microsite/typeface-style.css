@@ -11,16 +11,59 @@ body{
     font-family:"meteoric";
     max-width: 80%;
     padding: 20px;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    margin: 0 auto;
+   
+
+      
+      
+    
 }
+p{
+    margin-bottom: 30%;
+}
+.icon{
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
 h1{
     font-size: 80px;
+position: relative;
 }
 h2{
     text-align: center;
 }
+
+
+h3{
+    line-height: 180%;
+    
+}
 h5{
-    text-align: center;
+    text-align: left;
     font-family: "Crimson Text", serif;
     font-weight: 400;
     font-style: normal;
+    max-width: 50%;
+    margin: 0 auto;
 }
+
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* 把影片壓到背景 */
+    overflow: hidden;
+  }
+  
+  .video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 保持影片填滿但不變形 */
+  }
