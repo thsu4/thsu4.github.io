@@ -14,14 +14,11 @@ body{
     color: rgb(255, 255, 255);
     background-color: black;
     margin: 0 auto;
-   
-asddadsa
-      
       
     
 }
 p{
-    margin-bottom: 30%;
+    margin-bottom: 20%;
 }
 .icon{
     width: 30px;
@@ -51,4 +48,34 @@ h5{
     margin: 0 auto;
 }
 
+.images{
+    max-width: 50%;
+    max-height: 500px;
+    padding: 5%;
+    position: relative;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
 
+}
+
+
+
+
+
+.fly {
+    animation: flyacross 8s infinite linear;
+    position: absolute;
+    top: 50%;
+    left: -200px;
+  }
+  
+  @keyframes flyacross {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(120vw); /* 視窗寬度的 120%，讓它飛出去 */
+    }
+  }
+  
