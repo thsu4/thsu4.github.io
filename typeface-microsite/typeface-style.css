@@ -41,6 +41,8 @@ h3{
 }
 h5{
     text-align: left;
+    font-size: 18px;
+    line-height: 150%;
     font-family: "Crimson Text", serif;
     font-weight: 400;
     font-style: normal;
@@ -49,7 +51,7 @@ h5{
 }
 
 .images{
-    max-width: 50%;
+    max-width: 500px;
     max-height: 500px;
     padding: 5%;
     position: relative;
@@ -59,23 +61,50 @@ h5{
 
 }
 
+.header {
+    background-color: black;
+    color: white;
+    padding: 40px;
 
-
-
-
-.fly {
-    animation: flyacross 8s infinite linear;
-    position: absolute;
-    top: 50%;
-    left: -200px;
+    transition: background-image 0.3s ease, background-color 0.3s ease;
   }
-  
-  @keyframes flyacross {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(120vw); /* 視窗寬度的 120%，讓它飛出去 */
-    }
-  }
-  
+
+.header:hover{
+    background-image: url("image/hover-image.gif"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent; 
+    transition: background-image 0.3s ease, background-color 0.3s ease;
+}
+
+.list{
+    text-align: center;
+    margin: 0 auto;
+    font-size:30px ;
+    line-height: 150%;
+    color: black;
+    background-color: rgb(224, 224, 224);
+    border-radius: 10px;
+    width: 80%;
+    height: auto;
+    padding: 50px;
+}
+
+a{
+    max-width: 50%;
+font-family: "meteoric";
+color: rgb(255, 255, 255);
+font-size: 15px;
+padding: 10px;
+border-radius: 10px;
+text-decoration: none; 
+border-color: white;
+background-color: rgb(0, 0, 0);
+}
+
+a:hover{
+    font-size: 18px;
+    color: rgb(0, 0, 0);padding: 12px;
+    background-color: rgb(255, 255, 255);
+    transition: background-image 0.3s ease, background-color 0.3s ease;padding: 1s ease;
+}
