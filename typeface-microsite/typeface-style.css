@@ -64,6 +64,9 @@ header:hover .readme{
   scale:50%;
   transition: scale 1s ease;
 }
+header:hover{
+  cursor: url("cursor_hover.png"), auto;	
+}
 
 body{
     font-family:"meteoric";
@@ -73,7 +76,8 @@ body{
     background-color: black;
     margin: 0 auto;
     background-image: url("background.gif");
-    cursor: url("CURSOR.png"), auto;	
+    cursor: url("cursor.png"), auto;	
+
 
 }
 p{
@@ -158,6 +162,7 @@ a:hover{
     color: rgb(248, 255, 111);padding: 10 10 10 5;
     
     transition: background-image 0.5s ease, background-color 0.3s ease;padding: 1s ease;
+    cursor: url("cursor_hover.png"), auto;	
 }
 
 
@@ -228,6 +233,7 @@ opacity: 0;
   margin-left: auto;
   margin-right: auto;
   transition: opacity 1s ease;
+  cursor: url("cursor_hover.png"), auto;	
 }
 .off{
   max-width: 40%;
@@ -237,13 +243,14 @@ opacity: 0;
     display: block;
   margin-left: auto;
   margin-right: auto;
-
+  cursor: url("cursor_hover.png"), auto;	
   transition: opacity 1s ease;
 }
 .off:hover + .on{
 display: block;
 opacity: 1;
 transition: opacity 1s ease;
+cursor: url("cursor_hover.png"), auto;	
 }
 
 
