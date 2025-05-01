@@ -201,3 +201,54 @@ scroll-margin-top: 200px;
 .title{
   scroll-margin-top: 200px;
 }
+ 
+
+.on{
+  display: none;
+  max-width: 40%;
+  border-radius: 70%;
+    padding: 2%;
+    position: relative;
+opacity: 0;
+  margin-left: auto;
+  margin-right: auto;
+  transition: opacity 1s ease;
+}
+.off{
+  max-width: 40%;
+  border-radius: 70%;
+    padding: 2%;
+    position: relative;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  transition: opacity 1s ease;
+}
+.off:hover + .on{
+display: block;
+opacity: 1;
+transition: opacity 1s ease;
+}
+
+
+
+ 
+.rotate {
+  max-width: 40%;
+  border-radius: 70%;
+    padding: 10%;
+    position: relative;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  animation: spin 8s linear infinite;
+}
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }}
+  
