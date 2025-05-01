@@ -69,6 +69,7 @@ p{
     width: 30px;
     height: 30px;
     vertical-align: middle;
+    padding-bottom: 5px;
 }
 
 h1{
@@ -252,3 +253,6 @@ transition: opacity 1s ease;
       transform: rotate(360deg);
     }}
   
+    .editor{
+      color: rgb(248, 255, 111);
+    }
