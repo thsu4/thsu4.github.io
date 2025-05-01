@@ -33,6 +33,15 @@ opacity: 0;
     scale: 15%;
     opacity: 0;
     }
+
+    .readme{
+position: fixed;
+      scale: 0%;
+      opacity: 1;
+      rotate:10deg;
+      top:10%;
+      left:40%;
+      }
   
 header:hover .star1{
   opacity: 0.6;
@@ -50,7 +59,12 @@ header:hover .star3{
   transition: transform 3.5s ease;
   transform: rotate(160deg);
 }
-  
+header:hover .readme{
+  opacity: 1;
+  scale:50%;
+  transition: scale 1s ease;
+}
+
 body{
     font-family:"meteoric";
     max-width: 80%;
