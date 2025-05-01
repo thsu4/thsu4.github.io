@@ -6,7 +6,50 @@
     font-style: normal;
   }
   
+
+
+.star1{
   
+position:fixed;
+top:40%;
+left:50%;
+scale: 30%;
+opacity: 0;
+}
+.star2{
+  
+  position:fixed;
+  top:20%;
+  left:5%;
+  scale: 20%;
+  opacity: 0;
+  }
+
+  .star3{
+  
+    position:fixed;
+    top:20%;
+    left:65%;
+    scale: 15%;
+    opacity: 0;
+    }
+  
+header:hover .star1{
+  opacity: 0.6;
+  transition: transform 2s ease;
+  transform: rotate(360deg);
+}
+header:hover .star2{
+  opacity: 0.8;
+  transition: transform 2.5s ease;
+  transform: rotate(180deg);
+}
+  
+header:hover .star3{
+  opacity: 0.5;
+  transition: transform 3.5s ease;
+  transform: rotate(160deg);
+}
   
 body{
     font-family:"meteoric";
@@ -17,7 +60,7 @@ body{
     margin: 0 auto;
     background-image: url("background.gif");
     cursor: url("CURSOR.png"), auto;	
-    
+
 }
 p{
     margin-bottom: 20%;
@@ -31,31 +74,36 @@ p{
 h1{
     font-size: 100px;
 position: relative;
+
 }
 h2{
     text-align: center;
-    font-size: 30px;;
+    font-size: 30px;
+    line-height: 180%;
+    color: rgb(248, 255, 111);
 }
 
 
 h3{
     line-height: 180%;
+    max-width: 60%;
+    
     
 }
 h5{
     text-align: left;
-    font-size: 18px;
-    line-height: 150%;
-    font-family: "Crimson Text", serif;
+    font-size: 16px;
+    line-height: 250%;
+    font-family: "meteoric";
     font-weight: 400;
     font-style: normal;
-    max-width: 50%;
+    max-width: 65%;
     margin: 0 auto;
 }
 
 .images{
-    max-width: 500px;
-    max-height: 500px;
+    max-width: 40%;
+  border-radius: 70%;
     padding: 5%;
     position: relative;
     display: block;
@@ -72,9 +120,9 @@ h5{
     line-height: 150%;
     color: black;
     border-radius: 10px;
-    width: 80%;
+    width: 85%;
     height: auto;
-    padding: 50px;
+    padding: 10px;
 }
 
 a{
@@ -83,21 +131,73 @@ font-family: "meteoric";
 color: rgb(255, 255, 255);
 font-size: 15px;
 padding: 10px;
-border-radius: 10px;
+border-radius: 30px;
 text-decoration: none; 
 border-color: white;
 background-color: rgb(0, 0, 0);
-
+transition: background-image 0.5s ease, background-color 0.3s ease;padding: 1s ease;
 }
 
 a:hover{
     font-size: 16px;
-    color: rgb(0, 0, 0);padding: 12px;
-    background-color: rgb(255, 255, 255);
+    color: rgb(248, 255, 111);padding: 10 10 10 5;
+    
     transition: background-image 0.5s ease, background-color 0.3s ease;padding: 1s ease;
 }
 
 
 .target{
-scroll-margin-top: 300px;
+scroll-margin-top: 200px;
+}
+
+.fly {
+    position: absolute;
+    top: 50%; /* 垂直置中 */
+    left: -200px; /* 從畫面外左邊開始 */
+    width: 150px;
+    transform: translateY(-50%); /* 完全垂直置中 */
+    animation: fly-across 6s linear infinite;
+  }
+  
+  @keyframes fly-across 
+  {
+    0% {
+      left: -200px;
+      top: -200px;
+    }
+    100% {
+      left: 100vw;
+      top:100vx;
+    }
+    0% {
+        left: -200px;
+        transform: translateY(-50%) rotate(0deg);
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        left: 100vw;
+        transform: translateY(-50%) rotate(360deg);
+        opacity: 0;
+  }
+}
+
+
+
+.back{
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 0 0 10px  rgb(255, 255, 255);
+  padding:10px;
+ margin: auto;
+  width: 20%;
+  margin-bottom: 200px; 
+  border-radius: 50%;
+}
+
+
+.title{
+  scroll-margin-top: 200px;
 }
